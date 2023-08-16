@@ -1,6 +1,15 @@
-import React from "react";
+import React from 'react';
+import './App.css';
 
-const Card = () => {
-return <div>Hola, soy una tarjeta</div>;
-};
+//nombre y color
+
+function Card({ name, color }) {
+  return (
+    <div className="card">
+      <p>Nombre: {name}</p>
+      <p>Color: {color}</p>
+    </div>
+  );
+}
+
 export default Card;
